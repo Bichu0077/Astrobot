@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astrobot</title>
+  <link rel="stylesheet" href="/static/style.css?v=3" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="icon" type="image/png" href="/static/astrobot.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+  <div class="header-left">
+    <img src="/static/astrobot.png" alt="Astrobot Logo" class="logo" />
+    <div class="text-group">
+      <h1>Astrobot</h1>
+      <p class="tagline">Your cheerful space companion</p>
+    </div>
+  </div>
+</header>
+  
+<main id="chat-box" class="chat-box">
+  <div class="welcome-msg" id="welcome-message">
+    <div class="astro-wave">👋</div>
+    <div>
+      <h2>Welcome to Astrobot 🤖</h2>
+      <p>Ready to blast off into a universe of knowledge? 🚀</p>
+      <p>Ask me anything about space, science, or life in the Astroverse! 🌌</p>
+    </div>
+  </div>
+</main>
+
+    <form id="chat-form" class="chat-form">
+      <input id="user-input" type="text" placeholder="Ask me something cool..." autocomplete="off" required />
+      <button type="submit" id="send-btn">➤</button>
+    </form>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>

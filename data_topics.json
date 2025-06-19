@@ -1,0 +1,1295 @@
+[
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "What is the universe?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Observable universe vs total universe",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Age of the universe",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Big Bang theory",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Cosmic microwave background",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Hubble's Law and expansion of the universe",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Redshift and blueshift",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Light year, parsec, astronomical unit",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Electromagnetic spectrum in astronomy",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Fundamentals of Astronomy",
+    "topic": "Telescopes: optical, radio, space-based",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Planets in the solar system",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Moons of the planets",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Dwarf planets (e.g., Pluto)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Asteroids vs comets vs meteoroids",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "The asteroid belt",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "The Kuiper Belt and Oort Cloud",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Earth's rotation and revolution",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Seasons and equinoxes",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Solar and lunar eclipses",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Earth and the Solar System",
+    "topic": "Tides and moon's gravity",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "What is a star?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Life cycle of stars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Stellar classification (OBAFGKM)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Nuclear fusion in stars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Supernova and hypernova",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Neutron stars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "White dwarfs",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Black dwarfs",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Red giants and supergiants",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Stars & Stellar Evolution",
+    "topic": "Binary and variable stars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Black holes (stellar, supermassive, primordial)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Event horizon and singularity",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Wormholes",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Quasars and blazars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Pulsars and magnetars",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Dark matter and dark energy",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Neutrinos and cosmic rays",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Exotic Cosmic Objects",
+    "topic": "Cosmic strings and multiverse theories",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "What is a galaxy?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Types of galaxies (spiral, elliptical, irregular)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Milky Way Galaxy",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Andromeda and the Local Group",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Galaxy clusters and superclusters",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Intergalactic space",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Galaxies & Large-Scale Structures",
+    "topic": "Cosmic web structure",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "History of space exploration",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Moon landing (Apollo 11)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Mars rovers (Spirit, Opportunity, Curiosity, Perseverance)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Hubble Space Telescope",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "James Webb Space Telescope",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Voyager 1 and 2",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Artemis mission",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "International Space Station",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "SpaceX missions (Falcon, Starship)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Blue Origin & New Shepard",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Chandrayaan & ISRO missions",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "Europa Clipper",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Exploration & Missions",
+    "topic": "NASA, ESA, ISRO, Roscosmos overview",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "What is astrobiology?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Habitable zones",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Exoplanets and methods of detection",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Drake Equation",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Fermi Paradox",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "SETI",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Extremophiles on Earth",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "Alien life possibilities",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Astrobiology & Extraterrestrial Life",
+    "topic": "UFOs / UAPs (scientific treatment)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "General relativity in space",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Special relativity and time dilation",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Spacetime fabric",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Grand Unified Theory",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Inflation theory",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Multiverse theory",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Quantum mechanics in space",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "Hawking radiation",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Life in space",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Space suits and gravity",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Health impacts of zero gravity",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Space tourism",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Mars colonization",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Terraforming planets",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Living on the Moon",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Human Spaceflight & Colonization",
+    "topic": "Radiation protection in space",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Solar flares and coronal mass ejections",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Aurora borealis and aurora australis",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Gamma-ray bursts",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Meteor showers",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Planetary alignments",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Gravitational lensing",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "Tidal forces",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Radio astronomy",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Spectroscopy in astronomy",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Astrometry",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Parallax measurements",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Space telescopes vs ground-based telescopes",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Interferometry",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "Astronomical imaging and filters",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Types of satellites (communication, weather, scientific)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Low Earth Orbit, Medium, Geostationary",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Satellite launches",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Orbital mechanics",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Kessler Syndrome",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "Space debris and mitigation",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Is time travel possible?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What happens inside a black hole?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Can we live on Mars?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Are we alone in the universe?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What if the sun disappeared?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Can you fall into a wormhole?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Why is the night sky dark? (Olbers\u2019 paradox)",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What causes space to expand?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "Can you cry in space?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "How does gravity work in space?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+
+  { "category": "Fundamentals of Astronomy", "topic": "Why does the universe have no center?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Fundamentals of Astronomy", "topic": "Is space truly empty?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Fundamentals of Astronomy", "topic": "What is spacetime curvature?", "sources": ["Wikipedia", "NASA"], "difficulty": "advanced" },
+{ "category": "Fundamentals of Astronomy", "topic": "What is a black hole?", "sources": ["Wikipedia", "NASA"], "difficulty": "advanced" },
+{ "category": "Fundamentals of Astronomy", "topic": "What is the Big Bang?", "sources": ["Wikipedia", "NASA"], "difficulty": "advanced" },
+{ "category": "Fundamentals of Astronomy", "topic": "What is the universe?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+
+{ "category": "Stars & Stellar Evolution", "topic": "What happens after a supernova?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Stars & Stellar Evolution", "topic": "How are heavy elements formed in stars?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Stars & Stellar Evolution", "topic": "What is a neutron star?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Exotic Cosmic Objects", "topic": "What is a white hole?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+{ "category": "Exotic Cosmic Objects", "topic": "Can we detect wormholes?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+
+{ "category": "Cosmology & Theoretical Physics", "topic": "What is quantum gravity?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+{ "category": "Cosmology & Theoretical Physics", "topic": "Can entropy decrease?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+{ "category": "Cosmology & Theoretical Physics", "topic": "What is the holographic principle?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "What is the nature of dark matter?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "What is the nature of dark energy?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "category": "Cosmology & Theoretical Physics",
+    "topic": "What is the fate of the universe?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "advanced"
+  },
+
+
+{ "category": "Astrobiology & Extraterrestrial Life", "topic": "What is panspermia?", "sources": ["Wikipedia"], "difficulty": "intermediate" },
+{ "category": "Astrobiology & Extraterrestrial Life", "topic": "Can life exist without water?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+
+{ "category": "Astrobiology & Extraterrestrial Life", "topic": "What is the Goldilocks zone?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Astrobiology & Extraterrestrial Life", "topic": "What are extremophiles?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Astrobiology & Extraterrestrial Life", "topic": "What is the search for extraterrestrial intelligence (SETI)?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Human Spaceflight & Colonization", "topic": "Can babies be born in space?", "sources": ["NASA"], "difficulty": "beginner" },
+{ "category": "Human Spaceflight & Colonization", "topic": "How does time pass for astronauts?", "sources": ["Wikipedia"], "difficulty": "intermediate" },
+{ "category": "Human Spaceflight & Colonization", "topic": "How do astronauts use the bathroom?", "sources": ["NASA"], "difficulty": "beginner" },
+
+{ "category": "Satellite Technology & Orbits", "topic": "How do satellites avoid collisions?", "sources": ["Wikipedia", "NASA"], "difficulty": "intermediate" },
+{ "category": "Satellite Technology & Orbits", "topic": "How are orbits adjusted in space?", "sources": ["Wikipedia"], "difficulty": "intermediate" }
+  ,
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "What is the Kessler Syndrome?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Satellite Technology & Orbits",
+    "topic": "How do satellites communicate with Earth?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  }
+  ,
+  {
+    "category": "Space Phenomena",
+    "topic": "What causes solar flares?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "What are cosmic rays?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "What is a supernova remnant?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "What is a gamma-ray burst?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "What are gravitational waves?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Space Phenomena",
+    "topic": "What is a cosmic microwave background radiation?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+
+  { "category": "Space Phenomena", "topic": "What is space weather?", "sources": ["NASA"], "difficulty": "intermediate" },
+{ "category": "Space Phenomena", "topic": "What causes auroras?", "sources": ["NASA"], "difficulty": "beginner" },
+{ "category": "Space Phenomena", "topic": "How do solar storms affect Earth?", "sources": ["NASA"], "difficulty": "intermediate" },
+
+{ "category": "Tools & Techniques in Astronomy", "topic": "How do astronomers measure distance in space?", "sources": ["Wikipedia"], "difficulty": "intermediate" },
+{ "category": "Tools & Techniques in Astronomy", "topic": "What is adaptive optics?", "sources": ["Wikipedia"], "difficulty": "advanced" }
+  ,
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is photometry?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is astrobiology?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is spectroscopy?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is interferometry?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is a light curve?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Tools & Techniques in Astronomy",
+    "topic": "What is a redshift?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+
+{ "category": "Popular Questions and Concepts", "topic": "Why can't we see stars in space photos?", "sources": ["Wikipedia", "NASA"], "difficulty": "beginner" },
+{ "category": "Popular Questions and Concepts", "topic": "What would happen if you removed your helmet in space?", "sources": ["NASA"], "difficulty": "beginner" },
+{ "category": "Popular Questions and Concepts", "topic": "Can you hear sound in space?", "sources": ["NASA"], "difficulty": "beginner" },
+{ "category": "Popular Questions and Concepts", "topic": "Is it possible to reach light speed?", "sources": ["Wikipedia"], "difficulty": "intermediate" },
+{ "category": "Popular Questions and Concepts", "topic": "What does space smell like?", "sources": ["NASA"], "difficulty": "beginner" },
+{ "category": "Popular Questions and Concepts", "topic": "What is the most dangerous thing in space?", "sources": ["NASA"], "difficulty": "intermediate" },
+
+
+{ "category": "Popular Questions and Concepts", "topic": "Can black holes be used for time travel?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+{ "category": "Popular Questions and Concepts", "topic": "Is hyperspace possible?", "sources": ["Wikipedia"], "difficulty": "advanced" },
+{ "category": "Popular Questions and Concepts", "topic": "What are Dyson spheres?", "sources": ["Wikipedia"], "difficulty": "intermediate" },
+{ "category": "Popular Questions and Concepts", "topic": "Could we mine asteroids?", "sources": ["NASA"], "difficulty": "intermediate" },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Great Filter?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Kardashev scale?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Anthropic Principle?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Cosmic Microwave Background?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Observable Universe?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Cosmic Horizon?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  },
+
+  {
+    "category": "Popular Questions and Concepts",
+    "topic": "What is the Cosmic Web?",
+    "sources": [
+      "Wikipedia",
+      "NASA"
+    ],
+    "difficulty": "intermediate"
+  }
+
+
+
+]
