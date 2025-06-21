@@ -8,7 +8,7 @@ import logging
 
 nltk.download("punkt")
 
-# Load a lightweight sentence-transformer model (you can later switch to better ones)
+
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 

@@ -1,7 +1,9 @@
 from pathlib import Path
+import os
+
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_ollama import OllamaLLM
+from langchain_groq import ChatGroq  # ✅ switched from ChatOpenAI to ChatGroq
 from langchain.chains import RetrievalQA
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.prompts import ChatPromptTemplate
@@ -21,9 +23,13 @@ def load_vectorstore(vectorstore_dir: str = "vectorstore/faiss_index") -> BaseRe
 
 
 def build_qa_chain(retriever: BaseRetriever) -> RetrievalQA:
-    """Create a QA chain using Ollama with Astro Bot's fun tone and retriever."""
+    """Create a QA chain using Groq LLM with Astro Bot's fun tone and retriever."""
 
-    llm = OllamaLLM(model="mistral", temperature=0.3)
+    llm = ChatGroq(
+        model="llama3-70b-8192",
+        api_key=os.getenv("GROQ_API_KEY"),
+        temperature=0.3
+    )
 
     # Inject Astrobot's fun personality via prompt
     prompt = ChatPromptTemplate.from_messages([
@@ -71,7 +77,7 @@ def answer_query(query: str, qa_chain: RetrievalQA):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
-        print("Usage: python scripts/query_engine.py 'your question here'")
+        print("Usage: python query_engine.py 'your question here'")
         exit(1)
 
     user_query = sys.argv[1]
