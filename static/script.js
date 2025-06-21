@@ -38,7 +38,7 @@ function fadeOutWelcome() {
     welcome.style.transition = "opacity 0.4s ease, transform 0.4s ease";
     welcome.style.opacity = "0";
     welcome.style.transform = "translateY(-10px)";
-    setTimeout(() => welcome.remove(), 400); // Fully remove after fade
+    setTimeout(() => welcome.remove(), 400); 
   }
 }
 
@@ -47,12 +47,12 @@ form.addEventListener("submit", async (e) => {
   const userMessage = input.value.trim();
   if (!userMessage) return;
 
-  fadeOutWelcome(); // ✨ Smoothly hide welcome message
+  fadeOutWelcome(); 
 
   addBubble(userMessage, "user");
   input.value = "";
 
-  addBubble("", "bot", true); // Show typing dots
+  addBubble("", "bot", true); 
 
   try {
     const response = await fetch("/chat", {
