@@ -60,7 +60,7 @@ def init_chain():
 
     retriever = FAISS.load_local(
     "vectorstore/faiss_index",
-    HuggingFaceEmbeddings(model_name="paraphrase-albert-small-v2"),
+    HuggingFaceEmbeddings(model_name="./models/paraphrase-albert-small-v2"),
     allow_dangerous_deserialization=True
 ).as_retriever(search_type="similarity", search_kwargs={"k": 4})
 

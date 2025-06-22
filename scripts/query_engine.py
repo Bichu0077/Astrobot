@@ -3,7 +3,7 @@ import os
 
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_groq import ChatGroq  # ✅ switched from ChatOpenAI to ChatGroq
+from langchain_groq import ChatGroq  
 from langchain.chains import RetrievalQA
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.prompts import ChatPromptTemplate
@@ -11,7 +11,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 def load_vectorstore(vectorstore_dir: str = "vectorstore/faiss_index") -> BaseRetriever:
     """Load FAISS vector store and return a retriever."""
-    embed_model = HuggingFaceEmbeddings(model_name="paraphrase-albert-small-v2")
+    embed_model = HuggingFaceEmbeddings(model_name="./models/paraphrase-albert-small-v2")
     vs_path = Path(vectorstore_dir)
     if not (vs_path / "index.faiss").exists():
         raise FileNotFoundError(f"FAISS index not found in {vectorstore_dir}")
