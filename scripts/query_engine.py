@@ -9,10 +9,9 @@ from langchain_core.retrievers import BaseRetriever
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
-
 def load_vectorstore(vectorstore_dir: str = "vectorstore/faiss_index") -> BaseRetriever:
     """Load FAISS vector store and return a retriever."""
-    embed_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embed_model = HuggingFaceEmbeddings(model_name="paraphrase-albert-small-v2")
     vs_path = Path(vectorstore_dir)
     if not (vs_path / "index.faiss").exists():
         raise FileNotFoundError(f"FAISS index not found in {vectorstore_dir}")

@@ -59,10 +59,10 @@ def init_chain():
     logging.info("🔧 Initializing Astro Bot RAG chain...")
 
     retriever = FAISS.load_local(
-        "vectorstore/faiss_index",
-        HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2"),
-        allow_dangerous_deserialization=True
-    ).as_retriever(search_type="similarity", search_kwargs={"k": 4})
+    "vectorstore/faiss_index",
+    HuggingFaceEmbeddings(model_name="paraphrase-albert-small-v2"),
+    allow_dangerous_deserialization=True
+).as_retriever(search_type="similarity", search_kwargs={"k": 4})
 
     # ✅ Updated to use Groq
     llm = ChatGroq(
