@@ -68,13 +68,10 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
    # FastAPI backend
    uvicorn app.main:app --reload
    
-   # Or Gradio interface  
-   python gradio_app.py
-   ```
 
 6. **Access the app**
    - FastAPI: http://localhost:8000
-   - Gradio: http://localhost:7860
+
 
 ### Docker Setup
 
