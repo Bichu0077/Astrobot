@@ -77,12 +77,3 @@ def filter_topics(
         filtered = [t for t in filtered if t.get("difficulty") == difficulty]
 
     return filtered
-
-
-# # 🔧 Standalone test mode
-# if __name__ == "__main__":
-#     topics = load_topics("data_topics.json")
-#     print(f"Loaded {len(topics)} topics total.")
-
-#     astro = filter_topics(topics, category="Fundamentals of Astronomy")
-#     print(f"Filtered: {len(astro)} in 'Fundamentals of Astronomy'.")

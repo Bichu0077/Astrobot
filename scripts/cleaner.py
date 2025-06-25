@@ -4,10 +4,10 @@ import re
 def clean_text(text: str) -> str:
     """
     Cleans raw Wikipedia text by:
-    - Removing citation numbers like [1], [23]
-    - Removing extra whitespace and line breaks
+    - Removes citation numbers like [1], [23]
+    - Removes extra whitespace and line breaks
     - Normalizing unicode characters
-    - Stripping leading/trailing whitespace
+    - Stripps leading/trailing whitespace
 
     Args:
         text (str): Raw Wikipedia text.

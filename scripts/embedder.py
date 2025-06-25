@@ -1,6 +1,5 @@
 # scripts/embedder.py
 
-import os
 import json
 from pathlib import Path
 from typing import List
@@ -35,7 +34,7 @@ def build_vectorstore_from_chunks(
     chunks_dir: str = "data/chunks",
     vectorstore_dir: str = "vectorstore/faiss_index"
 ):
-    """Embeds all chunked .jsonl files and saves them to a FAISS index."""
+    """Embedds all chunked .jsonl files and saves them to a FAISS index."""
 
     embed_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     all_docs = []

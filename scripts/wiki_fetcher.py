@@ -14,11 +14,6 @@ class WikiFetcher:
             language (str): Wikipedia language (default = 'en').
             user_agent (str): Custom user-agent string.
         """
-        if user_agent is None:
-            user_agent = (
-                "AstroRAGBot/1.0 (https://github.com/yourname/astro-rag-chatbot; contact: your@email.com)"
-            )
-
         self.wiki = wikipediaapi.Wikipedia(
             language=language,
             user_agent=user_agent

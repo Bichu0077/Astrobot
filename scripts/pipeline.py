@@ -5,12 +5,6 @@ from tqdm import tqdm
 from typing import List, Dict
 import sys
 import logging
-import os
-
-# Add project root to sys.path for module resolution
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
-# Import custom modules
 from scripts.topics_loader import load_topics
 from scripts.wiki_fetcher import WikiFetcher
 from scripts.cleaner import clean_text
@@ -18,6 +12,9 @@ from scripts.saver import save_article
 from scripts.chunker import chunk_and_save
 from scripts.embedder import build_vectorstore_from_chunks
 from scripts.query_engine import load_vectorstore, build_qa_chain, answer_query
+
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 
 def normalize_topic_title(topic: str) -> str:

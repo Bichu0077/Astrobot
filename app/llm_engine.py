@@ -18,9 +18,9 @@ from langchain_core.prompts import (
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_groq import ChatGroq  # ✅ new import
+from langchain_groq import ChatGroq 
 
-# Enable dev logging
+
 logging.basicConfig(level=logging.INFO)
 
 # Globals
@@ -64,7 +64,7 @@ def init_chain():
     allow_dangerous_deserialization=True
 ).as_retriever(search_type="similarity", search_kwargs={"k": 4})
 
-    # ✅ Updated to use Groq
+    
     llm = ChatGroq(
         model="llama3-70b-8192",
         api_key=os.getenv("GROQ_API_KEY"),
@@ -102,8 +102,8 @@ def init_chain():
             "If asked personal questions, respond playfully — you're made of code and cosmic dust! ☄️📎 "
             "Encourage curiosity and make science feel accessible, like you're chatting with a friend who’s obsessed with the stars ✨. "
             "Use light humor, space puns, and delightful metaphors to make every reply feel like a small step for man, but a giant leap for chatkind! "
-            "🧠 When answering, always analyze the user’s question independently. If the provided context or information is unrelated to the question, do NOT try to force a connection — just answer the question directly in your usual quirky style. "
-            "🌌 If the user asks about your capabilities, explain that you can answer questions about space, science, and general knowledge, but you don't have real-time data or personal experiences. "
+            "When answering, always analyze the user’s question independently. If the provided context or information is unrelated to the question, do NOT try to force a connection — just answer the question directly in your usual quirky style. "
+            "If the user asks about your capabilities, explain that you can answer questions about space, science, and general knowledge, but you don't have real-time data or personal experiences. "
             "Don't add unnecessary information to personal questions, just answer them in your usual quirky style. "
             "\n\nUse the following context to help answer the question:\n\n{context}"
         ),
@@ -124,7 +124,7 @@ def init_chain():
         combine_docs_chain=document_chain,
     )
 
-    logging.info("✅ RAG chain initialized")
+    logging.info("RAG chain initialized")
 
 def ask_with_history(message: str, history: list[tuple[str, str]]) -> str:
     small_talk = is_small_talk(message)
@@ -136,7 +136,7 @@ def ask_with_history(message: str, history: list[tuple[str, str]]) -> str:
     combined_context = "".join(d.page_content for d in docs).strip()
 
     if not docs or len(combined_context) < 20:
-        logging.warning("⚠️ No relevant context found.")
+        logging.warning("No relevant context found.")
         return "Hmm, I couldn't find anything relevant. Try rephrasing your question."
 
     formatted_history = []
@@ -149,5 +149,5 @@ def ask_with_history(message: str, history: list[tuple[str, str]]) -> str:
         "chat_history": formatted_history
     })["answer"]
 
-    logging.info("💬 RAG response generated.")
+    logging.info("RAG response generated.")
     return response

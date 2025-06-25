@@ -1,7 +1,6 @@
 from typing import List
 from sentence_transformers import SentenceTransformer, util
 import nltk
-import numpy as np
 import json
 from pathlib import Path
 import logging
@@ -18,7 +17,7 @@ def semantic_chunk(
     similarity_threshold: float = 0.75
 ) -> List[str]:
     """
-    Split text semantically using sentence embeddings + similarity.
+    Split text semantically using sentence embeddings and similarity.
 
     Args:
         text (str): Full cleaned text.
@@ -39,7 +38,7 @@ def semantic_chunk(
         current_chunk.append(sent)
         current_tokens += len(sent.split())
 
-        # Try to group similar nearby sentences into one chunk
+        #grouping similar sentences which are near into one chunk
         if (
             i < len(sentences) - 1
             and current_tokens < max_chunk_tokens

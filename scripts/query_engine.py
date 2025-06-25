@@ -30,7 +30,7 @@ def build_qa_chain(retriever: BaseRetriever) -> RetrievalQA:
         temperature=0.3
     )
 
-    # Inject Astrobot's fun personality via prompt
+    #Astrobot's fun personality via prompt.
     prompt = ChatPromptTemplate.from_messages([
         ("system", 
          "You are Astro Bot 🚀, a playful, curious space explorer! Answer all questions about space and science "
@@ -39,7 +39,7 @@ def build_qa_chain(retriever: BaseRetriever) -> RetrievalQA:
         ("human", "{question}")
     ])
 
-    # Create a full custom chain (LLM with prompt)
+   
     prompt_chain = (
         {"question": RunnablePassthrough()}
         | prompt
