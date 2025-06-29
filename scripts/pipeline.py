@@ -41,7 +41,8 @@ def run_pipeline(
     auto_query: str = None
 ):
     setup_logging()
-    wiki = WikiFetcher()
+    wiki = WikiFetcher(user_agent="AstrobotTest/0.1 (mailto:bichudnarayan@gmail.com)")
+
     topics: List[Dict] = load_topics(topics_file)
 
     if not topics:

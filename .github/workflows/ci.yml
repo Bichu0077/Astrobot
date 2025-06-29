@@ -28,9 +28,9 @@ jobs:
         run: |
           echo "✅ Dependencies installed. Ready to run pipeline or tests."
 
-      # If you add tests later:
-      # - name: 🧪 Run tests
-      #   run: pytest
+      
+      - name: 🧪 Run tests
+        run: pytest
 
       - name: 🎉 Success
         run: echo "CI passed!"
