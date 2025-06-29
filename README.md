@@ -111,7 +111,8 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 ### 🛠️ Pipeline Usage (Data Processing)
  ```bash
    # Run entire pipeline: fetch → clean → chunk → embed
-   python scripts/pipeline.py --query "What is the theory of relativity?"
+   python -m scripts.pipeline --query "What is the theory of relativity?"
+
    ```
    
 
