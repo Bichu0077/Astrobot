@@ -27,6 +27,11 @@ jobs:
       - name: ✅ Run pipeline dry test
         run: |
           echo "✅ Dependencies installed. Ready to run pipeline or tests."
+      
+
+      - name: Download NLTK data
+        run: |
+          python -m nltk.downloader punkt
 
       
       - name: 🧪 Run tests
