@@ -7,9 +7,14 @@ from pydantic import BaseModel
 
 from app.llm_engine import init_chain, ask_with_history
 
-app = FastAPI(title="Astrobot Chatbot")
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app = FastAPI(
+    title="Astrobot Chatbot",
+    docs_url="/docs",
+    openapi_url="/openapi.json"
+)
 templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 chat_history = []
 

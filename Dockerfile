@@ -11,10 +11,19 @@ RUN apt-get update && apt-get install -y \
     libsm6 \
     libxext6 \
     libxrender-dev \
+    libopenblas-dev \
+    libgomp1 \
+    zlib1g-dev \
+    git \
+    libssl-dev \
+    libffi-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip config set global.index-url https://pypi.org/simple
+
+RUN pip install --no-cache-dir --timeout=1800 -r requirements.txt
+
 
 COPY . .
 
