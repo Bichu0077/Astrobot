@@ -32,6 +32,7 @@ jobs:
       - name: Download NLTK data
         run: |
           python -m nltk.downloader punkt
+          python -m nltk.downloader punkt_tab
 
       
       - name: 🧪 Run tests
