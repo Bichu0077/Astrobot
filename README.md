@@ -1,4 +1,5 @@
-# 🌌 AstroBot
+# 🌌 AstroBot ![CI](https://github.com/Bichu0077/Astrobot/actions/workflows/ci.yml/badge.svg)
+
 
 A quirky, space-themed chatbot that makes astrophysics accessible through AI-powered conversations. Built with RAG (Retrieval-Augmented Generation) to provide accurate, engaging answers about space and astronomy.
 
