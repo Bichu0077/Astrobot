@@ -6,11 +6,11 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 
 ## 📸 Demo
 
-![AstroBot Demo](./assets/demo.gif)
+<!-- ![AstroBot Demo](./assets/demo.gif) -->
 
-![Chat Interface](./assets/chat-interface.png)
+![Chat Interface](./assets/UI.png)
 
-[![Demo Video](./assets/video-thumbnail.png)](https://youtu.be/your-demo-video)
+<!-- [![Demo Video](./assets/video-thumbnail.png)](https://youtu.be/your-demo-video) -->
 
 ---
 
