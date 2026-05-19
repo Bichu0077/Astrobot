@@ -85,12 +85,13 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 
 5. **Run the application**
    ```bash
-   # FastAPI backend
-   uvicorn app.main:app --reload
-   
+   # Windows-safe command that bypasses a broken uvicorn launcher
+   python -m uvicorn app.main:app --reload
+   ```
 
 6. **Access the app**
-   - FastAPI: http://localhost:8000
+   - Open the frontend UI at http://localhost:8000
+   - API docs are available at http://localhost:8000/docs
 
 
 ### Docker Setup

@@ -1,0 +1,902 @@
+{
+  "config": {
+    "dataset_path": "data/eval_data.json",
+    "vectorstore_dir": "vectorstore/faiss_index",
+    "results_path": "results/eval_report.json",
+    "model_name": "llama-3.1-8b-instant",
+    "embedding_model": "./models/paraphrase-albert-small-v2",
+    "bert_score_model": "distilbert-base-uncased",
+    "top_k_values": [
+      1,
+      3,
+      5
+    ]
+  },
+  "summary": {
+    "answer_faithfulness": 0.7505354521958099,
+    "answer_relevance": 0.7445136298731144,
+    "bertscore_f1": 0.48532386422157286,
+    "context_utilization": 0.98,
+    "hit_rate@1": 0.1,
+    "hit_rate@3": 0.4,
+    "hit_rate@5": 0.5,
+    "llm_time_seconds": 0.45778466999763623,
+    "mrr": 0.22,
+    "ndcg@1": 0.1,
+    "ndcg@3": 0.25,
+    "ndcg@5": 0.2886852807234542,
+    "precision@1": 0.1,
+    "precision@3": 0.13333333333333333,
+    "precision@5": 0.1,
+    "recall@1": 0.003333333333333333,
+    "recall@3": 0.03343669250645995,
+    "recall@5": 0.04454780361757106,
+    "retrieval_time_seconds": 0.02461791000678204,
+    "rouge_1": 0.3547339996496762,
+    "rouge_2": 0.18726524639860062,
+    "rouge_l": 0.30797191924922207,
+    "total_time_seconds": 0.48240258000441827
+  },
+  "samples": [
+    {
+      "question": "What is a black hole and why is the event horizon important?",
+      "ground_truth_answer": "A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape. The event horizon is the boundary beyond which escape is no longer possible.",
+      "relevant_chunk_keywords": [
+        "black hole",
+        "event horizon",
+        "gravity"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Black hole",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 119,
+          "source_file": "Black_hole_chunks.jsonl",
+          "preview": "Event horizon The defining feature of a black hole is the appearance of an event horizon\u2014a boundary in spacetime through which matter and light can pass only inward towards the mass of the black hole. Nothing, not even light, can escape from inside the event horizon.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Black hole",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 122,
+          "source_file": "Black_hole_chunks.jsonl",
+          "preview": "As predicted by general relativity, the presence of a mass deforms spacetime in such a way that the paths taken by particles bend towards the mass. At the event horizon of a black hole, this deformation becomes so strong that there are no paths that lead away from the black hole.",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Event horizon",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 13,
+          "source_file": "Event_horizon_chunks.jsonl",
+          "preview": "A cosmic event horizon is a real event horizon because it affects all kinds of signals, including gravitational waves, which travel at the speed of light. More specific horizon types include the related but distinct absolute and apparent horizons found around a black hole.",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Hawking Radiation",
+          "category": "Cosmology & Theoretical Physics",
+          "chunk_id": 34,
+          "source_file": "Hawking_Radiation_chunks.jsonl",
+          "preview": "The black hole is the background spacetime for a quantum field theory. The field theory is defined by a local path integral, so if the boundary conditions at the horizon are determined, the state of the field outside will be specified.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Event horizon",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 18,
+          "source_file": "Event_horizon_chunks.jsonl",
+          "preview": "Isolated and dynamical horizons, which are important in current black hole research. Cosmic event horizon In cosmology, the event horizon of the observable universe is the largest comoving distance from which light emitted now can ever reach the observer in the future. This differs from the concept ",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "A black hole is a region in spacetime where the gravitational pull is so strong that nothing, not even light, can escape. The event horizon is the boundary of a black hole, marking the point of no return. Once matter or light crosses the event horizon, it's trapped inside the black hole and cannot escape.\n\nThe event horizon is important because it's the point where the gravitational pull becomes so strong that there are no paths leading away from the black hole. This makes it impossible for anything to escape from inside the event horizon.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.43076923076923074,
+        "rouge_2": 0.328125,
+        "rouge_l": 0.4153846153846154,
+        "bertscore_f1": 0.6415035724639893,
+        "answer_faithfulness": 0.7899806962784904,
+        "answer_relevance": 0.6927821313141147
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.07770170003641397,
+        "llm_time_seconds": 1.1540810999576934,
+        "total_time_seconds": 1.2317827999941073
+      }
+    },
+    {
+      "question": "What is the Big Bang theory?",
+      "ground_truth_answer": "The Big Bang theory says the universe began in an extremely hot, dense state and has been expanding ever since.",
+      "relevant_chunk_keywords": [
+        "big bang",
+        "universe",
+        "expansion"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Big Bang",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 0,
+          "source_file": "Big_Bang_chunks.jsonl",
+          "preview": "The Big Bang is a physical theory that describes how the universe expanded from an initial state of high density and temperature.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Big Bang",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 413,
+          "source_file": "Big_Bang_chunks.jsonl",
+          "preview": "OCLC 835115510. External links Once Upon a Universe Archived 22 June 2020 at the Wayback Machine \u2013 STFC funded project explaining the history of the universe in easy-to-understand language \"Big Bang Cosmology\" \u2013 NASA/WMAP Science Team \"The Big Bang\" \u2013 NASA Science \"Big Bang, Big Bewilderment\" \u2013 Big ",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Big Bang",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 151,
+          "source_file": "Big_Bang_chunks.jsonl",
+          "preview": "Inflation and baryogenesis remain more speculative features of current Big Bang models. Viable, quantitative explanations for such phenomena are still being sought.",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Big Bang",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 316,
+          "source_file": "Big_Bang_chunks.jsonl",
+          "preview": "\"Reflections on Early Work on 'Big Bang' Cosmology\". Physics Today.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Universe",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 34,
+          "source_file": "Universe_chunks.jsonl",
+          "preview": "The same synonyms are found in English, such as everything (as in the theory of everything), the cosmos (as in cosmology), the world (as in the many-worlds interpretation), and nature (as in natural laws or natural philosophy). Chronology and the Big Bang The prevailing model for the evolution of th",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The Big Bang theory describes how the universe expanded from an initial state of high density and temperature.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.5263157894736842,
+        "rouge_2": 0.2222222222222222,
+        "rouge_l": 0.4736842105263158,
+        "bertscore_f1": 0.6077130436897278,
+        "answer_faithfulness": 0.8210082069883646,
+        "answer_relevance": 0.6590545819420649
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.02330719999736175,
+        "llm_time_seconds": 0.1927414999809116,
+        "total_time_seconds": 0.21604869997827336
+      }
+    },
+    {
+      "question": "What is the Milky Way galaxy?",
+      "ground_truth_answer": "The Milky Way is the spiral galaxy that contains our Solar System.",
+      "relevant_chunk_keywords": [
+        "milky way",
+        "galaxy",
+        "spiral"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Milky Way Galaxy",
+          "category": "Galaxies & Large-Scale Structures",
+          "chunk_id": 1,
+          "source_file": "Milky_Way_Galaxy_chunks.jsonl",
+          "preview": "The Milky Way or Milky Way Galaxy is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars in other arms of the galaxy, which are so far away that they cannot be individually distinguished ",
+          "is_relevant": true
+        },
+        {
+          "rank": 2,
+          "topic": "Solar System",
+          "category": "Earth and the Solar System",
+          "chunk_id": 382,
+          "source_file": "Solar_System_chunks.jsonl",
+          "preview": "It is a member of the thin disk population of stars orbiting close to the galactic plane. Its speed around the center of the Milky Way is about 220 km/s, so that it completes one revolution every 240 million years.",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Galaxy",
+          "category": "Galaxies & Large-Scale Structures",
+          "chunk_id": 0,
+          "source_file": "Galaxy_chunks.jsonl",
+          "preview": "A galaxy is a system of stars, stellar remnants, interstellar gas, dust, and dark matter bound together by gravity.",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Galaxy",
+          "category": "Galaxies & Large-Scale Structures",
+          "chunk_id": 275,
+          "source_file": "Galaxy_chunks.jsonl",
+          "preview": "The Hercules\u2013Corona Borealis Great Wall, currently the largest structure in the universe found so far, is 10 billion light-years (three gigaparsecs) in length. The Milky Way galaxy is a member of an association named the Local Group, a relatively small group of galaxies that has a diameter of approx",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Milky Way Galaxy",
+          "category": "Galaxies & Large-Scale Structures",
+          "chunk_id": 159,
+          "source_file": "Milky_Way_Galaxy_chunks.jsonl",
+          "preview": "As a comparison, the neighboring Andromeda Galaxy contains an estimated one trillion (1012) stars. The Milky Way may contain ten billion white dwarfs, a billion neutron stars, and a hundred million stellar black holes.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The Milky Way galaxy is a barred spiral galaxy that includes the Solar System. It is estimated to be 26.8 \u00b1 1.1 kiloparsecs (87,400 \u00b1 3,600 light-years) in diameter and about 1,000 light-years thick at the spiral arms. The Milky Way is a member of the Local Group, a relatively small group of galaxies, and is estimated to contain various celestial objects such as white dwarfs, neutron stars, and stellar black holes.",
+      "retrieval_metrics": {
+        "precision@1": 1.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2,
+        "recall@1": 0.03333333333333333,
+        "recall@3": 0.03333333333333333,
+        "recall@5": 0.03333333333333333,
+        "hit_rate@1": 1.0,
+        "hit_rate@3": 1.0,
+        "hit_rate@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 1.0,
+        "ndcg@5": 1.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.24719101123595502,
+        "rouge_2": 0.16091954022988506,
+        "rouge_l": 0.20224719101123595,
+        "bertscore_f1": 0.3948749303817749,
+        "answer_faithfulness": 0.7769308831968452,
+        "answer_relevance": 0.7396166072616895
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.02524510002695024,
+        "llm_time_seconds": 0.4453219000133686,
+        "total_time_seconds": 0.4705670000403188
+      }
+    },
+    {
+      "question": "What is the Solar System?",
+      "ground_truth_answer": "The Solar System is the Sun and all objects bound to it by gravity, including planets, moons, asteroids, and comets.",
+      "relevant_chunk_keywords": [
+        "solar system",
+        "sun",
+        "planets"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Solar System",
+          "category": "Earth and the Solar System",
+          "chunk_id": 1,
+          "source_file": "Solar_System_chunks.jsonl",
+          "preview": "The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Solar System",
+          "category": "Earth and the Solar System",
+          "chunk_id": 92,
+          "source_file": "Solar_System_chunks.jsonl",
+          "preview": "Habitability Besides solar energy, the primary characteristic of the Solar System enabling the presence of life is the heliosphere and planetary magnetic fields (for those planets that have them). These magnetic fields partially shield the Solar System from high-energy interstellar particles called ",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Solar System",
+          "category": "Earth and the Solar System",
+          "chunk_id": 12,
+          "source_file": "Solar_System_chunks.jsonl",
+          "preview": "Six planets, seven dwarf planets, and other bodies have orbiting natural satellites, which are commonly called 'moons'. The Solar System is constantly flooded by the Sun's charged particles, the solar wind, forming the heliosphere.",
+          "is_relevant": true
+        },
+        {
+          "rank": 4,
+          "topic": "Natural satellite",
+          "category": "Earth and the Solar System",
+          "chunk_id": 94,
+          "source_file": "Natural_satellite_chunks.jsonl",
+          "preview": "NASA/JPL Solar System Dynamics. Retrieved 26 January 2012.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Solar System",
+          "category": "Earth and the Solar System",
+          "chunk_id": 13,
+          "source_file": "Solar_System_chunks.jsonl",
+          "preview": "The Solar System is constantly flooded by the Sun's charged particles, the solar wind, forming the heliosphere. Around 75\u201390 astronomical units from the Sun, the solar wind is halted, resulting in the heliopause.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It formed about 4.6 billion years ago.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2,
+        "recall@1": 0.0,
+        "recall@3": 0.023255813953488372,
+        "recall@5": 0.023255813953488372,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 1.0,
+        "hit_rate@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.5,
+        "ndcg@5": 0.5
+      },
+      "generation_metrics": {
+        "rouge_1": 0.4444444444444445,
+        "rouge_2": 0.27906976744186046,
+        "rouge_l": 0.39999999999999997,
+        "bertscore_f1": 0.4863293766975403,
+        "answer_faithfulness": 0.7224598790796551,
+        "answer_relevance": 0.7350804907605288
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.023340200015809387,
+        "llm_time_seconds": 0.20718649995978922,
+        "total_time_seconds": 0.2305266999755986
+      }
+    },
+    {
+      "question": "What is dark matter?",
+      "ground_truth_answer": "Dark matter is a form of matter that does not emit light but reveals itself through gravity and its effects on galaxies and large-scale structure.",
+      "relevant_chunk_keywords": [
+        "dark matter",
+        "gravity",
+        "galaxy"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Dark matter",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 0,
+          "source_file": "Dark_matter_chunks.jsonl",
+          "preview": "In astronomy, dark matter is an invisible and hypothetical form of matter that does not interact with light or other electromagnetic radiation. Dark matter is implied by gravitational effects that cannot be explained by general relativity unless more matter is present than can be observed.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Dark matter",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 290,
+          "source_file": "Dark_matter_chunks.jsonl",
+          "preview": "Fundamentals of Dark Matter. UCL Press.",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Dark matter",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 287,
+          "source_file": "Dark_matter_chunks.jsonl",
+          "preview": "Beings made of dark matter are antagonists in Stephen Baxter's Xeelee Sequence. More broadly, the phrase \"dark matter\" is used metaphorically in fiction to evoke the unseen or invisible.",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Dark matter",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 3,
+          "source_file": "Dark_matter_chunks.jsonl",
+          "preview": "Dark matter is thought to serve as gravitational scaffolding for cosmic structures. After the Big Bang, dark matter clumped into blobs along narrow filaments with superclusters of galaxies forming a cosmic web at scales on which entire galaxies appear like tiny particles.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Universe",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 120,
+          "source_file": "Universe_chunks.jsonl",
+          "preview": "The present overall density of this type of matter is very low, roughly 4.5 \u00d7 10\u221231 grams per cubic centimeter, corresponding to a density of the order of only one proton for every four cubic meters of volume. The nature of both dark energy and dark matter is unknown.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "Dark matter is an invisible and hypothetical form of matter that doesn't interact with light or other electromagnetic radiation. It's implied by gravitational effects that can't be explained by general relativity unless more matter is present than can be observed.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.2898550724637681,
+        "rouge_2": 0.1492537313432836,
+        "rouge_l": 0.2608695652173913,
+        "bertscore_f1": 0.5102429986000061,
+        "answer_faithfulness": 0.7805742441292665,
+        "answer_relevance": 0.7100436700461372
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.022091799997724593,
+        "llm_time_seconds": 0.34676200000103563,
+        "total_time_seconds": 0.3688537999987602
+      }
+    },
+    {
+      "question": "What is the cosmic microwave background?",
+      "ground_truth_answer": "The cosmic microwave background is the faint leftover radiation from the early universe, often treated as evidence for the Big Bang.",
+      "relevant_chunk_keywords": [
+        "cosmic microwave background",
+        "radiation",
+        "big bang"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Cosmic Microwave Background",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 293,
+          "source_file": "Cosmic_Microwave_Background_chunks.jsonl",
+          "preview": "The Cosmic Microwave Background. Cambridge University Press.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Cosmic Microwave Background",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 19,
+          "source_file": "Cosmic_Microwave_Background_chunks.jsonl",
+          "preview": "Features The cosmic microwave background radiation is an emission of uniform black body thermal energy coming from all directions. Intensity of the CMB is expressed in kelvin (K), the SI unit of temperature.",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Universe",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 195,
+          "source_file": "Universe_chunks.jsonl",
+          "preview": "The highly redshifted photons from this period form the cosmic microwave background. Tiny variations in the temperature of the CMB correspond to variations in the density of the universe that were the early \"seeds\" from which all subsequent structure formation took place.",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Big Bang",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 166,
+          "source_file": "Big_Bang_chunks.jsonl",
+          "preview": "Techniques based on observation of the CMB suggest a lower value of this constant compared to the quantity derived from measurements based on the cosmic distance ladder. Cosmic microwave background radiation In 1964, Arno Penzias and Robert Wilson serendipitously discovered the cosmic background rad",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Cosmic Microwave Background",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 304,
+          "source_file": "Cosmic_Microwave_Background_chunks.jsonl",
+          "preview": "\"CMBR: Cosmic Microwave Background Radiation\". Sixty Symbols.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The cosmic microwave background is an emission of uniform black body thermal energy coming from all directions, consisting of highly redshifted photons. It's a remnant from the early universe, with tiny variations in temperature corresponding to variations in the density of the universe that seeded all subsequent structure formation.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.3098591549295775,
+        "rouge_2": 0.20289855072463767,
+        "rouge_l": 0.2816901408450704,
+        "bertscore_f1": 0.5411723852157593,
+        "answer_faithfulness": 0.8707557830489041,
+        "answer_relevance": 0.845770210540345
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 0.8,
+        "retrieval_time_seconds": 0.020408299984410405,
+        "llm_time_seconds": 0.5268112000194378,
+        "total_time_seconds": 0.5472195000038482
+      }
+    },
+    {
+      "question": "What is a telescope used for in astronomy?",
+      "ground_truth_answer": "A telescope is used to collect and focus light so astronomers can observe distant celestial objects in more detail.",
+      "relevant_chunk_keywords": [
+        "telescope",
+        "light",
+        "astronomy"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Telescope",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 0,
+          "source_file": "Telescope_chunks.jsonl",
+          "preview": "A telescope is a device used to observe distant objects by their emission, absorption, or reflection of electromagnetic radiation. Originally, it was an optical instrument using lenses, curved mirrors, or a combination of both to observe distant objects \u2013 an optical telescope. Nowadays, the word \"te",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Telescope",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 65,
+          "source_file": "Telescope_chunks.jsonl",
+          "preview": "Examples of space observatories using this type of telescope are the Einstein Observatory, ROSAT, and the Chandra X-ray Observatory. In 2012 the NuSTAR X-ray Telescope was launched which uses Wolter telescope design optics at the end of a long deployable mast to enable photon energies of 79 keV.",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Interferometry",
+          "category": "Tools & Techniques in Astronomy",
+          "chunk_id": 152,
+          "source_file": "Interferometry_chunks.jsonl",
+          "preview": "An astronomical interferometer achieves high-resolution observations using the technique of aperture synthesis, mixing signals from a cluster of comparatively small telescopes rather than a single very expensive monolithic telescope. Early radio telescope interferometers used a single baseline for m",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Galaxy",
+          "category": "Galaxies & Large-Scale Structures",
+          "chunk_id": 73,
+          "source_file": "Galaxy_chunks.jsonl",
+          "preview": "Infrared is also used to observe distant, red-shifted galaxies that were formed much earlier. Water vapor and carbon dioxide absorb a number of useful portions of the infrared spectrum, so high-altitude or space-based telescopes are used for infrared astronomy.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Telescope",
+          "category": "Fundamentals of Astronomy",
+          "chunk_id": 3,
+          "source_file": "Telescope_chunks.jsonl",
+          "preview": "They were used for both terrestrial applications and astronomy. The reflecting telescope, which uses mirrors to collect and focus light, was invented within a few decades of the first refracting telescope.",
+          "is_relevant": true
+        }
+      ],
+      "generated_answer": "A telescope is used in astronomy to observe distant objects by detecting their emission, absorption, or reflection of electromagnetic radiation. This can be done across various regions of the electromagnetic spectrum, including optical, X-ray, and infrared.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.2,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.1111111111111111,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 1.0,
+        "mrr": 0.2,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.38685280723454163
+      },
+      "generation_metrics": {
+        "rouge_1": 0.39285714285714285,
+        "rouge_2": 0.14814814814814814,
+        "rouge_l": 0.28571428571428575,
+        "bertscore_f1": 0.4585912227630615,
+        "answer_faithfulness": 0.8096374019904959,
+        "answer_relevance": 0.7468346658219209
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.019455700006801635,
+        "llm_time_seconds": 0.4996905000298284,
+        "total_time_seconds": 0.51914620003663
+      }
+    },
+    {
+      "question": "What does the Fermi paradox ask?",
+      "ground_truth_answer": "The Fermi paradox asks why, given the vast number of stars and planets, we have not yet found convincing evidence of extraterrestrial civilizations.",
+      "relevant_chunk_keywords": [
+        "fermi paradox",
+        "extraterrestrial",
+        "civilizations"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Fermi Paradox",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 360,
+          "source_file": "Fermi_Paradox_chunks.jsonl",
+          "preview": "Solving Fermi's paradox. Cambridge; New York, NY: Cambridge University Press.",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Fermi Paradox",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 54,
+          "source_file": "Fermi_Paradox_chunks.jsonl",
+          "preview": "Some examples of possible resolutions are that intelligent life is rarer than is thought, that assumptions about the general development or behavior of intelligent species are flawed, or, more radically, that the scientific understanding of the nature of the universe is quite incomplete. The Fermi p",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Fermi Paradox",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 55,
+          "source_file": "Fermi_Paradox_chunks.jsonl",
+          "preview": "The Fermi paradox can be asked in two ways. The first is, \"Why are no aliens or their artifacts found on Earth, or in the Solar System?\".",
+          "is_relevant": false
+        },
+        {
+          "rank": 4,
+          "topic": "Fermi Paradox",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 375,
+          "source_file": "Fermi_Paradox_chunks.jsonl",
+          "preview": "'\", This American Life radio show, hosted by Ira Glass. This episode's first 22 minutes discusses the Fermi Paradox.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Fermi Paradox",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 31,
+          "source_file": "Fermi_Paradox_chunks.jsonl",
+          "preview": "He posed a solution to the paradox: humanity is quarantined by aliens to protect its independent cultural development, which resembles the zoo hypothesis proposed by John Ball. Popularization The Fermi question first appeared in print in a footnote of a 1963 paper by Carl Sagan.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The Fermi paradox can be asked in two ways, but the first one is: \"Why are no aliens or their artifacts found on Earth, or in the Solar System?\"",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 0.0,
+        "hit_rate@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.0,
+        "ndcg@5": 0.0
+      },
+      "generation_metrics": {
+        "rouge_1": 0.2692307692307692,
+        "rouge_2": 0.08,
+        "rouge_l": 0.23076923076923075,
+        "bertscore_f1": 0.3638454079627991,
+        "answer_faithfulness": 0.5872790159674943,
+        "answer_relevance": 0.7507020404471741
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.012060899985954165,
+        "llm_time_seconds": 0.3157037000055425,
+        "total_time_seconds": 0.32776459999149665
+      }
+    },
+    {
+      "question": "What is the Drake equation?",
+      "ground_truth_answer": "The Drake equation is a framework for estimating how many communicative civilizations might exist in the Milky Way.",
+      "relevant_chunk_keywords": [
+        "drake equation",
+        "civilizations",
+        "milky way"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Drake Equation",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 132,
+          "source_file": "Drake_Equation_chunks.jsonl",
+          "preview": "Modifications As many observers have pointed out, the Drake equation is a very simple model that omits potentially relevant parameters, and many changes and modifications to the equation have been proposed. One line of modification, for example, attempts to account for the uncertainty inherent in ma",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Drake Equation",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 218,
+          "source_file": "Drake_Equation_chunks.jsonl",
+          "preview": "External links Interactive Drake Equation Calculator Frank Drake's 2010 article on \"The Origin of the Drake Equation\" \"Only a matter of time, says Frank Drake\". A Q&A with Frank Drake in February 2010 Drake, Frank (December 2004).",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Drake Equation",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 6,
+          "source_file": "Drake_Equation_chunks.jsonl",
+          "preview": "Equation The Drake equation is: N = R \u2217 \u22c5 f p \u22c5 n e \u22c5 f l \u22c5 f i \u22c5 f c \u22c5 L {\\displaystyle N=R_{*}\\cdot f_{\\mathrm {p} }\\cdot n_{\\mathrm {e} }\\cdot f_{\\mathrm {l} }\\cdot f_{\\mathrm {i} }\\cdot f_{\\mathrm {c} }\\cdot L} where N = the number of civilizations in the Milky Way galaxy with which communicatio",
+          "is_relevant": true
+        },
+        {
+          "rank": 4,
+          "topic": "Drake Equation",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 136,
+          "source_file": "Drake_Equation_chunks.jsonl",
+          "preview": "Others note that the Drake equation ignores many concepts that might be relevant to the odds of contacting other civilizations. For example, David Brin states: \"The Drake equation merely speaks of the number of sites at which ETIs spontaneously arise.",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Drake Equation",
+          "category": "Astrobiology & Extraterrestrial Life",
+          "chunk_id": 178,
+          "source_file": "Drake_Equation_chunks.jsonl",
+          "preview": "Then the focus becomes how to proceed experimentally. Indeed, Drake originally formulated the equation merely as an agenda for discussion at the Green Bank conference.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "The Drake equation is: N = R * \u22c5 f p \u22c5 n e \u22c5 f l \u22c5 f i \u22c5 f c \u22c5 L. It calculates the number of civilizations in the Milky Way galaxy with which communication might be possible.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2,
+        "recall@1": 0.0,
+        "recall@3": 0.1111111111111111,
+        "recall@5": 0.1111111111111111,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 1.0,
+        "hit_rate@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.5,
+        "ndcg@5": 0.5
+      },
+      "generation_metrics": {
+        "rouge_1": 0.42307692307692313,
+        "rouge_2": 0.24000000000000002,
+        "rouge_l": 0.3461538461538462,
+        "bertscore_f1": 0.39993762969970703,
+        "answer_faithfulness": 0.49350511032339894,
+        "answer_relevance": 0.7584458227940167
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.011614200018811971,
+        "llm_time_seconds": 0.2578207000042312,
+        "total_time_seconds": 0.26943490002304316
+      }
+    },
+    {
+      "question": "What are wormholes in theoretical physics?",
+      "ground_truth_answer": "Wormholes are hypothetical spacetime structures that could connect distant points in the universe, though they have not been observed.",
+      "relevant_chunk_keywords": [
+        "wormholes",
+        "spacetime",
+        "theoretical"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "topic": "Wormholes",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 1,
+          "source_file": "Wormholes_chunks.jsonl",
+          "preview": "A wormhole is a hypothetical structure that connects disparate points in spacetime. It can be visualized as a tunnel with two ends at separate points in spacetime (i.e., different locations, different points in time, or both).",
+          "is_relevant": false
+        },
+        {
+          "rank": 2,
+          "topic": "Wormholes",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 109,
+          "source_file": "Wormholes_chunks.jsonl",
+          "preview": "Have wormholes been proven to exist or are they still theoretical??\" answered by Richard F. Holman, William A. Hiscock and Matt Visser \"Why wormholes?\"",
+          "is_relevant": false
+        },
+        {
+          "rank": 3,
+          "topic": "Wormholes",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 44,
+          "source_file": "Wormholes_chunks.jsonl",
+          "preview": "Other non-traversable wormholes include Lorentzian wormholes (first proposed by John Archibald Wheeler in 1957), wormholes creating a spacetime foam in a general relativistic spacetime manifold depicted by a Lorentzian manifold, and Euclidean wormholes (named after Euclidean manifold, a structure of",
+          "is_relevant": true
+        },
+        {
+          "rank": 4,
+          "topic": "Wormholes",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 59,
+          "source_file": "Wormholes_chunks.jsonl",
+          "preview": "For this reason, the type of traversable wormhole they proposed, held open by a spherical shell of exotic matter, is also known as a Morris\u2013Thorne wormhole. Later, other types of traversable wormholes were discovered as allowable solutions to the equations of general relativity, including a variety ",
+          "is_relevant": false
+        },
+        {
+          "rank": 5,
+          "topic": "Wormholes",
+          "category": "Exotic Cosmic Objects",
+          "chunk_id": 57,
+          "source_file": "Wormholes_chunks.jsonl",
+          "preview": "What is left is the Ellis wormhole, a nongravitating, purely geometric, traversable wormhole. Kip Thorne and his graduate student Mike Morris independently discovered in 1988 the Ellis wormhole and argued for its use as a tool for teaching general relativity.",
+          "is_relevant": false
+        }
+      ],
+      "generated_answer": "According to the provided context, wormholes are a hypothetical structure that connects disparate points in spacetime, connecting two ends at separate points in spacetime. They are still theoretical, as there is no conclusive proof of their existence.\n\nHowever, the context mentions various types of wormholes, including traversable and non-traversable ones, and different solutions to the equations of general relativity that allow for wormholes. It also discusses the possibility of wormholes being held open by exotic matter or other means, but it does not confirm their existence.\n\nIn summary, wormholes are a theoretical concept in physics, and while they have been extensively studied and proposed in various forms, their existence remains unproven.",
+      "retrieval_metrics": {
+        "precision@1": 0.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2,
+        "recall@1": 0.0,
+        "recall@3": 0.16666666666666666,
+        "recall@5": 0.16666666666666666,
+        "hit_rate@1": 0.0,
+        "hit_rate@3": 1.0,
+        "hit_rate@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@1": 0.0,
+        "ndcg@3": 0.5,
+        "ndcg@5": 0.5
+      },
+      "generation_metrics": {
+        "rouge_1": 0.21374045801526717,
+        "rouge_2": 0.06201550387596899,
+        "rouge_l": 0.183206106870229,
+        "bertscore_f1": 0.4490280747413635,
+        "answer_faithfulness": 0.8532233009551828,
+        "answer_relevance": 0.806806077803152
+      },
+      "end_to_end_metrics": {
+        "context_utilization": 1.0,
+        "retrieval_time_seconds": 0.010953999997582287,
+        "llm_time_seconds": 0.631727600004524,
+        "total_time_seconds": 0.6426816000021063
+      }
+    }
+  ]
+}

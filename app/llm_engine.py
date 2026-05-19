@@ -18,8 +18,8 @@ from langchain_core.prompts import (
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_groq import ChatGroq 
-
+from langchain_groq import ChatGroq
+from groq import BadRequestError
 
 logging.basicConfig(level=logging.INFO)
 
@@ -54,19 +54,29 @@ def is_small_talk(msg: str) -> str | None:
 
     return None
 
-def init_chain():
+
+def init_chain(model_name: str | None = None):
+    """Initialize global retriever and qa_chain using the given Groq model name.
+
+    If `model_name` is None, the function reads `GROQ_MODEL` from the environment
+    and falls back to a built-in default.
+    """
     global retriever, qa_chain
     logging.info("🔧 Initializing Astro Bot RAG chain...")
 
     retriever = FAISS.load_local(
-    "vectorstore/faiss_index",
-    HuggingFaceEmbeddings(model_name="./models/paraphrase-albert-small-v2"),
-    allow_dangerous_deserialization=True
-).as_retriever(search_type="similarity", search_kwargs={"k": 4})
+        "vectorstore/faiss_index",
+        HuggingFaceEmbeddings(model_name="./models/paraphrase-albert-small-v2"),
+        allow_dangerous_deserialization=True
+    ).as_retriever(search_type="similarity", search_kwargs={"k": 4})
 
-    
+    if model_name is None:
+        model_name = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+
+    logging.info(f"Using Groq model: %s", model_name)
+
     llm = ChatGroq(
-        model="llama3-70b-8192",
+        model=model_name,
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.3
     )
@@ -144,10 +154,47 @@ def ask_with_history(message: str, history: list[tuple[str, str]]) -> str:
         formatted_history.append(HumanMessage(content=human))
         formatted_history.append(AIMessage(content=ai))
 
-    response = qa_chain.invoke({
-        "input": message,
-        "chat_history": formatted_history
-    })["answer"]
+    try:
+        response = qa_chain.invoke({
+            "input": message,
+            "chat_history": formatted_history
+        })["answer"]
+    except BadRequestError as e:
+        msg = str(e)
+        if "decommissioned" in msg or "model_decommissioned" in msg:
+            # Try fallback models if provided via GROQ_FALLBACK_MODELS
+            fallbacks_env = os.getenv("GROQ_FALLBACK_MODELS")
+            if fallbacks_env:
+                fallbacks = [m.strip() for m in fallbacks_env.split(",") if m.strip()]
+                logging.warning("Groq model decommissioned. Attempting fallbacks: %s", fallbacks)
+                last_err = e
+                for fb in fallbacks:
+                    try:
+                        init_chain(fb)
+                        response = qa_chain.invoke({
+                            "input": message,
+                            "chat_history": formatted_history
+                        })["answer"]
+                        logging.info("Succeeded with fallback model: %s", fb)
+                        return response
+                    except BadRequestError as sub_e:
+                        last_err = sub_e
+                        logging.warning("Fallback model %s failed: %s", fb, str(sub_e))
+
+                # All fallbacks failed
+                raise RuntimeError(
+                    "All configured GROQ_FALLBACK_MODELS failed after the primary model was decommissioned. "
+                    "Please set a valid `GROQ_MODEL` or update `GROQ_FALLBACK_MODELS`. "
+                    f"Last error: {str(last_err)}"
+                ) from last_err
+
+            # No fallbacks configured — provide a clear actionable error
+            raise RuntimeError(
+                "Groq API rejected the model. The model you requested appears to be decommissioned. "
+                "Set the environment variable `GROQ_MODEL` to a supported model name (see https://console.groq.com/docs/deprecations). "
+                f"Original error: {msg}"
+            ) from e
+        raise
 
     logging.info("RAG response generated.")
     return response

@@ -4,6 +4,7 @@ import os
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq  
+from groq import BadRequestError
 from langchain.chains import RetrievalQA
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.prompts import ChatPromptTemplate
@@ -21,11 +22,14 @@ def load_vectorstore(vectorstore_dir: str = "vectorstore/faiss_index") -> BaseRe
     return retriever
 
 
-def build_qa_chain(retriever: BaseRetriever) -> RetrievalQA:
+def build_qa_chain(retriever: BaseRetriever, model_name: str | None = None) -> RetrievalQA:
     """Create a QA chain using Groq LLM with Astro Bot's fun tone and retriever."""
 
+    if model_name is None:
+        model_name = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+
     llm = ChatGroq(
-        model="llama3-70b-8192",
+        model=model_name,
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.3
     )
@@ -58,7 +62,38 @@ def build_qa_chain(retriever: BaseRetriever) -> RetrievalQA:
 
 def answer_query(query: str, qa_chain: RetrievalQA):
     """Answer a question using the QA chain."""
-    result = qa_chain.invoke({"query": query})
+    try:
+        result = qa_chain.invoke({"query": query})
+    except BadRequestError as e:
+        msg = str(e)
+        if "decommissioned" in msg or "model_decommissioned" in msg:
+            fallbacks_env = os.getenv("GROQ_FALLBACK_MODELS")
+            if fallbacks_env:
+                fallbacks = [m.strip() for m in fallbacks_env.split(",") if m.strip()]
+                last_err = e
+                for fb in fallbacks:
+                    try:
+                        qa_chain = build_qa_chain(retriever, model_name=fb)
+                        result = qa_chain.invoke({"query": query})
+                        print("\n✅ Succeeded with fallback model:", fb)
+                        break
+                    except BadRequestError as sub_e:
+                        last_err = sub_e
+                        print(f"Fallback model {fb} failed: {sub_e}")
+                else:
+                    raise RuntimeError(
+                        "All configured GROQ_FALLBACK_MODELS failed after the primary model was decommissioned. "
+                        "Please set a valid `GROQ_MODEL` or update `GROQ_FALLBACK_MODELS`. "
+                        f"Last error: {last_err}"
+                    ) from last_err
+            else:
+                raise RuntimeError(
+                    "Groq API rejected the model. The model you requested appears to be decommissioned. "
+                    "Set the environment variable `GROQ_MODEL` to a supported model name (see https://console.groq.com/docs/deprecations). "
+                    f"Original error: {msg}"
+                ) from e
+        else:
+            raise
 
     print("\n💬 Question:", query)
     print("\n📘 Answer:", result["result"])
