@@ -1,10 +1,10 @@
-# 🌌 AstroBot ![CI](https://github.com/Bichu0077/Astrobot/actions/workflows/ci.yml/badge.svg)
+# AstroBot ![CI](https://github.com/Bichu0077/Astrobot/actions/workflows/ci.yml/badge.svg)
 
 A quirky, space-themed chatbot that makes astrophysics accessible through AI-powered conversations. Built with RAG (Retrieval-Augmented Generation) to provide accurate, engaging answers about space and astronomy.
 
 ---
 
-## 📸 Demo
+## Demo
 
 <!-- ![AstroBot Demo](./assets/demo.gif) -->
 
@@ -14,25 +14,25 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 
 ---
 
-## ✨ Features
+## Features
 
-- 🧠 **RAG-based QA**: Retrieves relevant astrophysics data before generating responses  
-- 🗃️ **Wikipedia Integration**: Fetches, cleans, and indexes astrophysics content automatically  
-- 🤖 **Grok AI Powered**: Uses Grok AI's API for natural, conversational responses  
-- 🧬 **Semantic Chunking**: Smart document processing for better retrieval accuracy  
-- 🧠 **Memory Support**: Maintains context across conversation turns  
-- 🪐 **Quirky Personality**: Space-themed responses with character and humor  
-- 🛠️ **FastAPI Backend**: Production-ready REST API  
-- 🎨 **Jinja2 Frontend**: Custom HTML/CSS/JS interface for full UI control  
-- 🐳 **Dockerized**: Production-ready Dockerfile & Compose support  
-- 🔁 **Automated Data Pipeline**: `pipeline.py` supports full ingestion → embedding → vectorization  
-- ✅ **CI Integration**: GitHub Actions test every commit to keep the code reliable  
-- 🧪 **Pytest Test Suite**: Includes pipeline test with NLTK, FAISS, LangChain integration  
-- 📄 **Logs + Configurable .env**: Monitored logs and environment-based configuration  
+- **RAG-based QA**: Retrieves relevant astrophysics data before generating responses  
+- **Wikipedia Integration**: Fetches, cleans, and indexes astrophysics content automatically  
+- **Grok AI Powered**: Uses Grok AI's API for natural, conversational responses  
+- **Semantic Chunking**: Smart document processing for better retrieval accuracy  
+- **Memory Support**: Maintains context across conversation turns  
+- **Quirky Personality**: Space-themed responses with character and humor  
+- **FastAPI Backend**: Production-ready REST API  
+- **Jinja2 Frontend**: Custom HTML/CSS/JS interface for full UI control  
+- **Dockerized**: Production-ready Dockerfile & Compose support  
+- **Automated Data Pipeline**: `pipeline.py` supports full ingestion → embedding → vectorization  
+- **CI Integration**: GitHub Actions test every commit to keep the code reliable  
+- **Pytest Test Suite**: Includes pipeline test with NLTK, FAISS, LangChain integration  
+- **Logs + Configurable .env**: Monitored logs and environment-based configuration  
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer        | Technology                                 |
 |--------------|---------------------------------------------|
@@ -48,7 +48,7 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.10+  
 - Grok AI API key  
@@ -57,7 +57,7 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
 
 ---
 
-## ⚡ Installation
+## Installation
 
 ### Local Setup
 
@@ -109,7 +109,7 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
    ```
 
    
-### 🛠️ Pipeline Usage (Data Processing)
+### Pipeline Usage (Data Processing)
  ```bash
    # Run entire pipeline: fetch → clean → chunk → embed
    python -m scripts.pipeline --query "What is the theory of relativity?"
@@ -117,7 +117,7 @@ A quirky, space-themed chatbot that makes astrophysics accessible through AI-pow
    ```
    
 
-## 🚀 Usage
+## Usage
 
 Send questions about astrophysics and space to AstroBot:
 
@@ -129,9 +129,9 @@ Send questions about astrophysics and space to AstroBot:
 AstroBot will retrieve relevant information and respond with its quirky, space-themed personality!
 
 
-## 🤝 Contributing
+## Contributing
 
-1. Fork the repository
+ Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
